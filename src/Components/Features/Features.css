@@ -1,0 +1,211 @@
+.accessories-container {
+    width: 100%;
+
+    background-color: #fdfdfd;
+}
+
+.accessories-selector {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 50px 0 0 0;
+}
+
+.accessories-information {
+    display: flex;
+    justify-content: space-between;
+    /*padding: 30px 0;*/
+    padding: 40px 0 120px 0;
+    background-size: cover;
+    background-image: url('https://media.revistagq.com/photos/61e544a3f0e1a56dae27e9e3/16:9/w_2560%2Cc_limit/Oculus-Quest-2.jpg');
+    border-radius: 0 0 10px 10px;
+
+}
+
+.accessories-information-text {
+
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 0 30px 30px 60px;
+    background-color: rgba(255, 255, 255, 0.51);
+    width: 35%;
+    min-width: 415px;
+}
+
+.accessories-information-text h1 {
+    font-size: 20px;
+    padding: 50px 0;
+}
+
+.accessories-information-text p {
+    width: 60%;
+}
+
+
+.accessories-information-buttons {
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.accessories-information-buttons button {
+    border: none;
+    width: 180px;
+    background: linear-gradient(257deg, rgba(171, 148, 226, 0.78) 0%, rgba(64, 0, 255, 0.75) 100%);
+    font-weight: 300;
+    border-radius: 30px;
+    color: white;
+    padding: 7px;
+    font-size: 12px;
+}
+
+.accessories-information-buttons a {
+    width: 180px;
+    border: none;
+    color: #676767;
+    margin: 0 0 0 30px;
+    font-size: 12px;
+
+}
+
+
+.accessories-information h1 {
+    color: #1f1f1f;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: left;
+
+}
+
+.accessories-information span {
+    color: #8c6ada;
+}
+
+.accessories-information p {
+    color: #525252;
+    text-align: left;
+
+}
+
+.accessories-text-selector {
+    text-align: center;
+}
+
+.accessories-text-selector h1 {
+    font-weight: 300;
+    font-size: 50px;
+    margin: 90px 0 80px 0;
+}
+
+
+.accessories-text-selector p {
+    width: 50%;
+    margin: 0 auto 60px auto;
+    color: #4d4d4d;
+}
+
+.accessories-card-container {
+
+
+    display: grid;
+    grid-template-columns: 50% 49%;
+    justify-content: space-between;
+    padding: 30px 0 90px 0;
+    /*background-color: red;*/
+
+
+}
+
+.accessories-card-box-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    grid-row-gap: 20px;
+    grid-column-gap: 25px;
+}
+
+
+.accessories-card {
+    width: 100%;
+
+}
+
+
+
+/*RESPONSIVE*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .accessories-information-text {
+        padding: 0 30px 30px 60px;
+        min-width: 315px;
+    }
+    .accessories-information-text h1 {
+        font-size: 30px;
+        padding: 50px 0;
+    }
+
+    .accessories-information-text p {
+        width: 80%;
+        font-size: 13px;
+    }
+    .accessories-text-selector h1 {
+        font-size: 40px;
+    }
+    .accessories-text-selector p {
+        width: 80%;
+        margin: 0 auto 60px auto;
+    }
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 450px) {
+
+    .accessories-information {
+
+        padding: 40px 0 60px 0;
+
+
+    }
+
+    .accessories-information-text {
+        padding: 30px 50px;
+        min-width: 0;
+        width: 100%;
+    }
+    .accessories-information-text h1 {
+        font-size: 30px;
+        padding: 50px 0;
+    }
+
+    .accessories-information-text p {
+        width: 100%;
+        font-size: 13px;
+    }
+    .accessories-text-selector h1 {
+
+        font-size: 30px;
+
+    }
+
+}
+
