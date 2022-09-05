@@ -1,0 +1,167 @@
+nav a{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+    transition:  0.3s;
+}
+
+nav h1{
+    font-size: 20px;
+    font-weight: 800;
+    transition:  0.3s;
+    color: #ffffff;
+}
+
+.navigation {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    color: #ffffff;
+    z-index: 10;
+    top: 0;
+    height: 62px;
+
+}
+
+.navigation-scroll {
+    background-color: #fdfdfd;
+    border-bottom: 1px solid #d5d5d5;
+    transition: background-color 0.7s;
+}
+
+.navigation-scroll h1{
+    font-size: 20px;
+    font-weight: 800;
+    transition:  0.3s;
+    color: #000000;
+}
+.navigation-scroll a{
+
+    transition:  0.3s;
+    color: #000000;
+}
+
+
+.navigation-selector {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 1.1rem 0;
+}
+
+.nav-logo {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    display: flex;
+}
+.nav-logo h1, .nav-logo p{
+    margin: 0 0 0 10px;
+}
+
+
+.nav-logo p{
+    font-size: 19px;
+}
+
+.nav-logo img{
+    width: 70px;
+}
+
+.nav-logo div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navigation-menu {
+    margin-left: auto;
+}
+
+.navigation-menu ul {
+    display: flex;
+    padding: 0;
+}
+
+.navigation-menu li {
+    list-style-type: none;
+
+}
+
+.navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.navigation-menu ul li:nth-child(2){
+    margin: 0 90px;
+
+}
+
+
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    background-color: rgba(42, 47, 56, 0);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+    z-index: 10;
+}
+
+.hamburger-black svg{
+    transition: 2s  ;
+    fill: black;
+}
+
+
+@media screen and (max-width: 680px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navigation-menu ul {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: calc(100vh);
+
+        border-top: 1px solid black;
+        display: none;
+        padding: 90px 0 0 0;
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg,  rgb(93, 93, 255) 45%, rgb(163, 127, 253) 100%);
+    }
+    .navigation-menu  li a:nth-child(1){
+        margin: 0;
+    }
+    .navigation-menu li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .navigation-menu li a {
+        color: #ffffff;
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    .navigation-menu li:hover {
+        background-color: #262626;
+    }
+
+    .navigation-menu.expanded ul {
+        display: block;
+    }
+}
+

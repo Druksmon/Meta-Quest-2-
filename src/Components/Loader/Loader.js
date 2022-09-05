@@ -1,10 +1,11 @@
-import  './Loeader.css'
+import  './Loader.css'
+import loader from '../Assets/loader.svg'
 
-const Loeader = () => {
+const Loader = () => {
   return(
-      <div scroll="no" className='loader'>
-          <h1>LOADING</h1>
+      <div  className='loader'>
+          <img src={loader} alt=""/>
       </div>
   )
 }
-export default Loeader
+export default Loader

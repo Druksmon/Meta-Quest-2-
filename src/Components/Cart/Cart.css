@@ -1,0 +1,135 @@
+.cart-container, .cart-container-slide {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    z-index: 10;
+    margin-left: auto;
+    min-width: 350px;
+    /*animation-timing-function: ease-out;*/
+    /*transition-duration: 500ms;*/
+    box-shadow: -18px 0px 32px -19px rgba(0, 0, 0, 0.42);
+    -webkit-box-shadow: -18px 0px 32px -19px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: -18px 0px 32px -19px rgba(0, 0, 0, 0.4);
+
+
+
+}
+
+.cart-container-selector {
+    background: #f1f1f1;
+    width: 100%;
+    margin-left: auto;
+    padding: 50px;
+    overflow-y: auto;
+
+}
+
+.cart-container-box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b4b4b4;
+    padding: 0 0 20px 0;
+}
+
+.cart-container-box h1 {
+
+    color: #343434;
+}
+
+.cart-close-icon, .modal-item-button {
+    background: none;
+    border: none;
+
+}
+
+.cart-close-icon img {
+    width: 20px;
+}
+
+.modal-cart {
+    padding: 20px 0 0 0;
+}
+
+.modal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.modal-item img {
+    width: 120px;
+}
+
+.modal-item-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-item-button img {
+    width: 25px;
+
+}
+
+.cart-result-container{
+    border-top: 1px solid #b7b7b7;
+    padding: 50px 0 ;
+
+}
+
+.cart-result-container button{
+    width: 100%;
+    border: none;
+    background: linear-gradient(257deg, rgba(171, 148, 226, 0.78) 0%, rgba(64, 0, 255, 0.75) 100%);
+    font-weight: 300;
+    border-radius: 5px;
+    color: white;
+    padding: 14px;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.cart-result-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*RESPONSIVE */
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+/*@media only screen and (max-width: 1200px) {*/
+/*}*/
+
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (max-width: 992px) {*/
+/*}*/
+
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (max-width: 768px) {*/
+
+/*}*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 350px) {
+    .cart-container, .cart-container-slide {
+
+        min-width: 300px;
+
+
+    }
+    .modal-item img {
+        width: 80px;
+    }
+    .modal-item-button img {
+        width: 25px;
+
+    }
+
+}
+

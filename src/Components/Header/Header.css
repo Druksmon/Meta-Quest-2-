@@ -1,0 +1,240 @@
+.oculus-video, .oculus-video-opacity {
+    /*position: absolute;*/
+    /*width: 100%;*/
+
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    /*top: 0;*/
+    /*left: 0;*/
+
+    opacity: 0.4;
+    z-index: 0;
+    transition: opacity 1.25s ease-in-out;
+    -moz-transition: opacity 1.25s ease-in-out;
+    -webkit-transition: opacity 1.25s ease-in-out;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.oculus-video-opacity {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    background: black;
+    opacity: 0.2;
+    transition: opacity 2.25s ease-in-out;
+    -moz-transition: opacity 2.25s ease-in-out;
+    -webkit-transition: opacity 2.25s ease-in-out;
+}
+
+.header {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.header-selector {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-box {
+    color: white;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    min-width: 638px;
+
+
+}
+
+.header-box h1 {
+    font-size: 90px;
+    line-height: 0;
+    padding: 60px 0;
+
+}
+
+
+
+.header-box p:nth-child(1) {
+    line-height: 0;
+}
+
+.header-description {
+    /*width: 60%;*/
+    color: #dcdcdc;
+}
+
+
+.header-discount {
+
+    padding: 10px 0;
+    font-size: 20px;
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #ffffff, rgba(175, 66, 97, 0));
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+.scroll-icon {
+    width: 40px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/*RESPONSIVE */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+    /*.oculus-video, .oculus-video-opacity {*/
+
+    /*    width: 100%;*/
+    /*    min-width: 1280px;*/
+
+
+    /*}*/
+
+
+    .header {
+
+        height: 80vh;
+
+
+    }
+    .header-box {
+        min-width: 438px;
+    }
+
+    .header-box h1 {
+        font-size: 60px;
+        padding: 40px 0;
+
+    }.header-box p {
+         font-size: 15px;
+
+     }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    /*.oculus-video, .oculus-video-opacity {*/
+
+    /*    width: 100%;*/
+    /*    min-width: 930px;*/
+
+
+    /*}*/
+
+
+    .header {
+
+        height: 60vh;
+
+
+    }
+    .header-box {
+        min-width: 380px;
+
+    }
+
+    .header-box h1 {
+        font-size: 50px;
+        padding: 40px 0 20px 0;
+
+    }.header-box p {
+         font-size: 14px;
+
+     }
+    .scroll-icon {
+        width: 40px;
+        top: 70%;
+
+
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+
+    .header-box {
+        min-width: 290px;
+
+    }
+
+    .header-box h1 {
+        font-size: 38px;
+        padding: 30px 0 20px 0;
+
+    }.header-box p {
+         font-size: 11px;
+
+     }
+    .scroll-icon {
+        width: 25px;
+        top: 70%;
+
+
+    }
+
+}
+
+
+
+
+/*RESPONSIVE */
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+/*@media only screen and (max-width: 1200px) {*/
+/*}*/
+
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (max-width: 992px) {*/
+/*}*/
+
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (max-width: 768px) {*/
+
+/*}*/
+
+/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
+/*@media only screen and (max-width: 600px) {*/
+/*    */
+/*}*/
+

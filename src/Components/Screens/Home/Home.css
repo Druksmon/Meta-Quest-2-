@@ -1,0 +1,11 @@
+.home-selector-none{
+  display: none;
+}
+
+.home-selector-block{
+    display: block;
+}
+
+/*.home-selector{*/
+/*    overflow: hidden;*/
+/*}*/

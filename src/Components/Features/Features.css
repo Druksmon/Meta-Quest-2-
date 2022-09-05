@@ -1,17 +1,17 @@
-.accessories-container {
+.Features-container {
     width: 100%;
 
     background-color: #fdfdfd;
 }
 
-.accessories-selector {
+.Features-selector {
     width: 90%;
     height: 100%;
     margin: auto;
     padding: 50px 0 0 0;
 }
 
-.accessories-information {
+.Features-information {
     display: flex;
     justify-content: space-between;
     /*padding: 30px 0;*/
@@ -22,7 +22,7 @@
 
 }
 
-.accessories-information-text {
+.Features-information-text {
 
     display: flex;
     flex-direction: column;
@@ -35,23 +35,23 @@
     min-width: 415px;
 }
 
-.accessories-information-text h1 {
+.Features-information-text h1 {
     font-size: 20px;
     padding: 50px 0;
 }
 
-.accessories-information-text p {
+.Features-information-text p {
     width: 60%;
 }
 
 
-.accessories-information-buttons {
+.Features-information-buttons {
     display: flex;
     margin: 30px 0;
     align-items: center;
 }
 
-.accessories-information-buttons button {
+.Features-information-buttons button {
     border: none;
     width: 180px;
     background: linear-gradient(257deg, rgba(171, 148, 226, 0.78) 0%, rgba(64, 0, 255, 0.75) 100%);
@@ -62,7 +62,7 @@
     font-size: 12px;
 }
 
-.accessories-information-buttons a {
+.Features-information-buttons a {
     width: 180px;
     border: none;
     color: #676767;
@@ -72,7 +72,7 @@
 }
 
 
-.accessories-information h1 {
+.Features-information h1 {
     color: #1f1f1f;
     font-weight: 300;
     font-size: 40px;
@@ -80,59 +80,56 @@
 
 }
 
-.accessories-information span {
+.Features-information span {
     color: #8c6ada;
 }
 
-.accessories-information p {
+.Features-information p {
     color: #525252;
     text-align: left;
 
 }
 
-.accessories-text-selector {
+.Features-text-selector {
     text-align: center;
 }
 
-.accessories-text-selector h1 {
+.Features-text-selector h1 {
     font-weight: 300;
     font-size: 50px;
-    margin: 90px 0 80px 0;
+    margin: 110px 0 90px 0;
 }
 
 
-.accessories-text-selector p {
+.Features-text-selector p {
     width: 50%;
     margin: 0 auto 60px auto;
-    color: #4d4d4d;
+    color: #707070;
 }
 
-.accessories-card-container {
-
-
+.Features-card-container {
     display: grid;
-    grid-template-columns: 50% 49%;
-    justify-content: space-between;
-    padding: 30px 0 90px 0;
-    /*background-color: red;*/
-
-
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 15px;
+    overflow: hidden;
 }
 
-.accessories-card-box-2 {
-    display: grid;
-    grid-template-columns: auto auto;
+.Features-principal {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
 
-    grid-row-gap: 20px;
+.Features-secondary{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 15px;
     grid-column-gap: 25px;
 }
-
-
-.accessories-card {
-    width: 100%;
-
-}
-
 
 
 /*RESPONSIVE*/
@@ -143,6 +140,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+    .Features-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -152,23 +152,36 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-    .accessories-information-text {
+    .Features-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        /*grid-template-rows: repeat(5 , 1fr);*/
+
+    }
+    .Features-secondary{
+
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Features-information-text {
         padding: 0 30px 30px 60px;
         min-width: 315px;
     }
-    .accessories-information-text h1 {
+
+    .Features-information-text h1 {
         font-size: 30px;
         padding: 50px 0;
     }
 
-    .accessories-information-text p {
+    .Features-information-text p {
         width: 80%;
         font-size: 13px;
     }
-    .accessories-text-selector h1 {
+
+    .Features-text-selector h1 {
         font-size: 40px;
     }
-    .accessories-text-selector p {
+
+    .Features-text-selector p {
         width: 80%;
         margin: 0 auto 60px auto;
     }
@@ -176,32 +189,33 @@
 }
 
 
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 450px) {
 
-    .accessories-information {
+    .Features-information {
 
         padding: 40px 0 60px 0;
 
 
     }
 
-    .accessories-information-text {
+    .Features-information-text {
         padding: 30px 50px;
         min-width: 0;
         width: 100%;
     }
-    .accessories-information-text h1 {
+
+    .Features-information-text h1 {
         font-size: 30px;
         padding: 50px 0;
     }
 
-    .accessories-information-text p {
+    .Features-information-text p {
         width: 100%;
         font-size: 13px;
     }
-    .accessories-text-selector h1 {
+
+    .Features-text-selector h1 {
 
         font-size: 30px;
 

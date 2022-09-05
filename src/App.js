@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+import AnimatedCursor from "react-animated-cursor"
+import Home from "./Components/Screens/Home/Home";
 import './App.css';
+import Products from "./Context/ContextProducts";
+import {useContext} from "react";
+import Loeader from "./Components/Loader/Loader";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const {loading} = useContext(Products);
+
+
+    return (
+        <>
+
+            <AnimatedCursor innerSize={15}
+                            outerSize={35}
+                            color='0, 0, 0'
+                            outerAlpha={0.2}
+                            innerScale={0.7}
+                            outerScale={2}
+                            clickables={[
+                                'a',
+                                'input[type="text"]',
+                                'input[type="email"]',
+                                'input[type="number"]',
+                                'input[type="submit"]',
+                                'input[type="image"]',
+                                'label[for]',
+                                'select',
+                                'textarea',
+                                'button',
+                                '.link'
+                            ]}/>
+            {
+                loading && (<Loeader/>)
+            }
+
+            <Home loading={loading} />
+        </>
+    );
 }
 
 export default App;
