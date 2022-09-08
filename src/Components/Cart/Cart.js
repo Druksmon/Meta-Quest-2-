@@ -1,8 +1,15 @@
 import './Cart.css'
-import {useCartItems, useCartOpen, useDeleteFromCart, useIsCartOpen} from '../../Context/ContextProducts';
+import Products, {
+    useCartItems,
+    useCartOpen,
+    useDeleteFromCart,
+    useFinish,
+    useIsCartOpen
+} from '../../Context/ContextProducts';
 import closeIcon from '../Assets/Icons/close.png'
 import trashIcon from '../Assets/Icons/trash.png'
 import {AnimatePresence, motion} from "framer-motion"
+import {useContext} from "react";
 
 const Cart = () => {
 
@@ -13,6 +20,14 @@ const Cart = () => {
 
     const suma = cartItems.map(item => item.price).reduce((prev, curr) => prev + curr, 0);
 
+    const {setFinish} = useContext(Products);
+    const isFinish = useFinish()
+
+    const checkOut = () => {
+        if (cartItems.length > 0 && isFinish === false ) {
+            setFinish()
+        }
+    }
 
     return (
         <>
@@ -20,8 +35,8 @@ const Cart = () => {
                 {
                     isCartOpen &&
                     (
-                        <motion.div initial={{ x: 1000}} animate={{ x: 0}}
-                                    transition={{ duration: 0.4}}   exit={{x: 1000}} className={'cart-container'}>
+                        <motion.div initial={{x: 1000}} animate={{x: 0}}
+                                    transition={{duration: 0.4}} exit={{x: 1000}} className={'cart-container'}>
                             <div className='cart-container-selector'>
                                 <div className="cart-container-box">
                                     <h1>Shopping List</h1>
@@ -59,7 +74,7 @@ const Cart = () => {
                                         <h2>${suma}</h2>
                                     </div>
 
-                                    <button>BUY</button>
+                                    <button onClick={checkOut}>BUY</button>
 
                                 </div>
 

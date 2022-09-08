@@ -12,6 +12,7 @@ export const ProductsProvider = ({children}) => {
     const [cartItems, setCartItems] = useState([]);
     const [isCartOpen, setIsCartOpen] = useState(false);
     const [loading, setLoading] = useState(true);
+    const [isFinish, setIsFinish] = useState(false);
 
     const db = getFirestore()
     const refIncluded = collection(db, 'IncludedProducts')
@@ -77,6 +78,10 @@ export const ProductsProvider = ({children}) => {
 
     }
 
+    const setFinish = () => {
+        setIsFinish(!isFinish)
+
+    }
 
     return (
 
@@ -85,11 +90,14 @@ export const ProductsProvider = ({children}) => {
             accessoriesProducts,
             metaQuestProduct,
             isCartOpen,
-            loading,
             openCart,
             addToCart,
             cartItems,
-            deleteFromCart
+            deleteFromCart,
+            loading,
+            isFinish,
+            setFinish,
+
         }}>
             {children}
         </Products.Provider>
@@ -115,6 +123,10 @@ export function useCartItems() {
 
 export function useDeleteFromCart() {
     return useContext(Products).deleteFromCart
+}
+
+export function useFinish() {
+    return useContext(Products).isFinish
 }
 
 

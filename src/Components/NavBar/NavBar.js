@@ -52,9 +52,7 @@ const NavBar = () => {
                             isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
                         }
                     >
-                        <motion.ul initial={{opacity: 0, y: -50}} whileInView={{opacity: 1, y: 0}}
-                                   exit={{opacity: 0, y: -50}}
-                                   transition={{type: 'tween', duration: 0.2}}>
+                        <ul >
                             <li>
                                 <a href='#header-container'>HOME</a>
                             </li>
@@ -64,7 +62,7 @@ const NavBar = () => {
                             <li>
                                 <a target='_blank' href="mailto:dariusvolkmann@gmail.com">ACCESSORIES </a>
                             </li>
-                        </motion.ul>
+                        </ul>
                     </div>
                 </div>
 

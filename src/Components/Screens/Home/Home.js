@@ -7,6 +7,7 @@ import Footer from "../../Footer/Footer";
 import SecondaryNavBar from "../../SecondaryNavBar/SecondaryNavBar";
 import Cart from "../../Cart/Cart";
 import Accessories from "../../Accessories/Accessories";
+import Finish from "../../Finish/Finish";
 
 const Home = ({loading}) => {
     return (
@@ -15,6 +16,7 @@ const Home = ({loading}) => {
             <Header/>
             <SecondaryNavBar/>
             <Cart/>
+            <Finish/>
             <Features/>
             <Included/>
             <Accessories/>
