@@ -23,8 +23,14 @@ const Features = () => {
         <div id='accesories' className="Features-container">
 
             <div className="Features-selector">
-                <div className="Features-information">
-                    <div className='Features-information-text'>
+                <motion.div initial={{opacity: 0, y: 50}}
+                            whileInView={{opacity: 1, y: 0}}
+                            viewport={{once: true}}
+                            transition={{duration: 0.8}}  className="Features-information">
+                    <motion.div   initial={{opacity: 0, y: 50}}
+                                  whileInView={{opacity: 1, y: 0}}
+                                  viewport={{once: true}}
+                                  transition={{duration: 1}} className='Features-information-text'>
                         <h1>Next-level hardware that’s <br/> <span>easy to set up</span> <br/> and safe to use</h1>
                         <p>Hundreds of hit games, one-of-a-kind experiences and
                             a growing community awaits you on Meta Quest 2.</p>
@@ -32,8 +38,8 @@ const Features = () => {
                             <button>BUY NOW</button>
                             <a>ORDER NOW</a>
                         </div>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
                 <div className="Features-text-section">
                     <div className="Features-text-selector">
                         <motion.h1 initial={{opacity: 0, y: 50}}
