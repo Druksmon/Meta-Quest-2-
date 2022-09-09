@@ -24,7 +24,7 @@ const Cart = () => {
     const isFinish = useFinish()
 
     const checkOut = () => {
-        if (cartItems.length > 0 && isFinish === false ) {
+        if (cartItems.length > 0 && isFinish === false) {
             setFinish()
         }
     }
