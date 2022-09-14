@@ -24,7 +24,7 @@ const NavBar = () => {
             <motion.nav initial={{y: "-100px"}} animate={{y: "0"}}  transition={{ duration: 1.4 }} className={color ? 'navigation navigation-scroll' : 'navigation'}>
                 <div className='navigation-selector'>
 
-                    <a href='#header-container' className="nav-logo">
+                    <a href='#home' className="nav-logo">
                         <img src={metaLogo} alt=""/>
                     </a>
 
@@ -54,13 +54,13 @@ const NavBar = () => {
                     >
                         <ul >
                             <li>
-                                <a href='#header-container'>HOME</a>
+                                <a href='#home'>HOME</a>
                             </li>
                             <li>
-                                <a href='#about-container'>PRODUCTS</a>
+                                <a href='#Included'>PRODUCTS</a>
                             </li>
                             <li>
-                                <a target='_blank' href="mailto:dariusvolkmann@gmail.com">ACCESSORIES </a>
+                                <a href='#accessories' >ACCESSORIES </a>
                             </li>
                         </ul>
                     </div>

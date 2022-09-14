@@ -11,7 +11,7 @@ const Accessories = () => {
 
     return (
         <>
-            <div className="accessories-container">
+            <div id='accessories' className="accessories-container">
                 <div className="accessories-selector">
                     <div className="accessories-text">
                         <motion.h1 initial={{opacity: 0, y: 50}}

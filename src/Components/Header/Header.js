@@ -20,8 +20,8 @@ const Header = () => {
 
     window.addEventListener('scroll', changeColor)
 
-    return (<header className='header'>
-
+    return (
+        <header id='home' className='header'>
             <div className=" header-selector">
                 <div className="header-box">
                     <motion.p initial={{opacity: 0, y: -100}}
@@ -62,7 +62,8 @@ const Header = () => {
                    poster={lentsVideoImg}>
                 <source src={oculus} type='video/mp4'/>
             </video>
-        </header>)
+        </header>
+    )
 }
 
 export default Header
