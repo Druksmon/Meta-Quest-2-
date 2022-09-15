@@ -135,12 +135,12 @@ nav h1{
         top: 0;
         width: 100%;
         height: calc(100vh);
-
         border-top: 1px solid black;
         display: none;
         padding: 90px 0 0 0;
         background: rgb(2,0,36);
-        background: linear-gradient(0deg,  rgb(93, 93, 255) 45%, rgb(163, 127, 253) 100%);
+        background: linear-gradient(0deg, rgb(128, 128, 203) 25%, rgb(204, 204, 204) 100%);
+
     }
     .navigation-menu  li a:nth-child(1){
         margin: 0;
@@ -152,12 +152,15 @@ nav h1{
 
     .navigation-menu li a {
         color: #ffffff;
+        font-weight: bold;
         width: 100%;
         padding: 1.5rem 0;
     }
 
     .navigation-menu li:hover {
-        background-color: #262626;
+        background: -webkit-linear-gradient(#a997ff, #000000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .navigation-menu.expanded ul {
